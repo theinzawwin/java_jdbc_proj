@@ -119,4 +119,9 @@ public class StudentDAOImpl implements StudentDAO{
         }
     }
 
+    @Override
+    public List<Student> getStudentListByCourse(int courseId) {
+        return List.of();
+    }
+
 }

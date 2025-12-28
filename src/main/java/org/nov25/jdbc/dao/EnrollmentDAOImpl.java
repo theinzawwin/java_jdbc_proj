@@ -1,6 +1,7 @@
 package org.nov25.jdbc.dao;
 
 import org.nov25.jdbc.model.Enrollment;
+import org.nov25.jdbc.model.EnrollmentSummary;
 import org.nov25.jdbc.model.StudentCourseDTO;
 import org.nov25.jdbc.util.DBConnection;
 
@@ -59,5 +60,10 @@ public class EnrollmentDAOImpl implements EnrollmentDAO {
             e.printStackTrace();
         }
         return list;
+    }
+
+    @Override
+    public EnrollmentSummary getEnrollmentSummary() {
+        return null;
     }
 }
