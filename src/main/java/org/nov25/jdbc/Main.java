@@ -9,11 +9,11 @@ import org.nov25.jdbc.model.Student;
 public class Main {
     public static void main(String[] args) {
 
-       /* StudentDAO dao = new StudentDAOImpl();
+        StudentDAO dao = new StudentDAOImpl();
 
         // CREATE
-        dao.addStudent(new Student("Moe Moe",
-                "moemoe@gmail.com", 22));
+        dao.addStudent(new Student("Hnin Hnin",
+                "hninhnin@gmail.com", 22));
 
         // READ ALL
         dao.getAllStudents().forEach(s ->
@@ -23,17 +23,18 @@ public class Main {
         );
 
         // READ ONE
-        Student s = dao.getStudentById(1);
+
+        Student s = dao.getStudentById(5);
         System.out.println("Found: " + s.getName());
 
         // UPDATE
-        s.setAge(22);
+        s.setAge(24);
         dao.updateStudent(s);
 
         // DELETE
-        dao.deleteStudent(2);
-        */
-        EnrollmentDAO enrollmentDAO = new EnrollmentDAOImpl();
+        dao.deleteStudent(4);
+
+      /*  EnrollmentDAO enrollmentDAO = new EnrollmentDAOImpl();
 
         enrollmentDAO.getStudentCourseDetails().forEach(dto ->
                 System.out.println(
@@ -42,7 +43,7 @@ public class Main {
                 )
         );
 
-
+        */
     }
 
 }

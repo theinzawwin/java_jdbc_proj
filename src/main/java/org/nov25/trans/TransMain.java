@@ -18,7 +18,7 @@ public class TransMain {
 
         // Using Stream API to filter high-salary employees
         List<Employee> highEarners = list.stream()
-                .filter(emp -> emp.getSalary() > 50000)
+                .filter(emp -> emp.getSalary() > 20000)
                 .collect(Collectors.toList());
 
         // Using Multi-threading to run the database transaction
